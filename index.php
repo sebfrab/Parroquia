@@ -10,40 +10,59 @@
         <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
         <!-- Css Web -->
         <link rel="stylesheet" type="text/css" href="./css/init.css" />
+        <!-- Menú -->
+        <link rel="stylesheet" type="text/css" href="./css/scrolling-nav.css" />
+        
         <!-- Jquery -->
         <script type="text/javascript" src="./js/jquery.js"></script>
     </head>
     <body>
         <header>
-            <nav role="navigation">
-                <div class="navbar-fixed-top">
-                    <div class="grad_menu navbar navbar navbar-collapse">
-                        <div class="container">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-js-navbar-collapse">
-                                    <span class="sr-only">Toggle</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a href="" class="navbar-brand"></a>
-                            </div>
-                            <div class="navbar-collapse bs-js-navbar-collapse collapse"> 
-                                <ul class="menu nav navbar-nav navbar-right">
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">home</a></li>                                    
-                                </ul>                                
-                            </div>
-                        </div>
+           <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top">Parroquia</a>
                     </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden">
+                                <a class="page-scroll" href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
+                <!-- /.container -->
             </nav>
         </header>
         
+        <div class="jumbotron">
+            <h1 style="text-align: center; margin-top: 150px;">
+                "Donde no hay amor, <br/>pon amor y sacarás amor"</h1>
+        </div>
         
+        
+        
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
@@ -56,7 +75,7 @@
             </div>
         </div>
     </section>
-
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
@@ -67,7 +86,7 @@
             </div>
         </div>
     </section>
-
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
@@ -78,7 +97,7 @@
             </div>
         </div>
     </section>
-
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -95,7 +114,7 @@
         
         
         <script type="text/javascript" src="./js/bootstrap.js"></script>
-        
+        <script type="text/javascript" src="./js/scrolling-nav.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
 

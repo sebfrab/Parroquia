@@ -10,3 +10,22 @@ root {
     display: block;
 }
 
+.navbar-default {
+    background-color: transparent !important;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #fff !important;
+}
+
+.jumbotron{
+    background-image: url('../images/portada_ajuste1.jpg');
+    background-repeat:none;
+    background-attachment:scroll;
+    background-position:center center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    -o-background-size:cover;
+    height: 600px;
+    color: #fff !important;
+}
