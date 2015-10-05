@@ -6,13 +6,17 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
-}
+@import url('../fonts/Montserrat-Regular.ttf');
+@import url('../fonts/Montserrat-Bold.ttf');
 
 .navbar-default {
     background-color: transparent !important;
 }
+
+.top-nav-collapse{
+    background-color: #2385a1 !important;
+}
+
 .navbar-default .navbar-nav > li > a{
     color: #fff !important;
 }
@@ -28,4 +32,18 @@ root {
     -o-background-size:cover;
     height: 600px;
     color: #fff !important;
+}
+
+.jumbotron > h1{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.menu > li > a{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
 }

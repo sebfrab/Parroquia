@@ -19,7 +19,7 @@
     <body>
         <header>
            <!-- Navigation -->
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <nav id="menu-principal" class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header page-scroll">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -28,12 +28,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand page-scroll" href="#page-top">Parroquia</a>
+                        <a class="navbar-brand page-scroll" href="#page-top"><b style="color:#fff;">Parroquia</b></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="menu nav navbar-nav navbar-right">
                             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                             <li class="hidden">
                                 <a class="page-scroll" href="#page-top"></a>
@@ -56,8 +56,8 @@
         </header>
         
         <div class="jumbotron">
-            <h1 style="text-align: center; margin-top: 150px;">
-                "Donde no hay amor, <br/>pon amor y sacarás amor"</h1>
+            <h1 style="text-align: center; margin-top: 220px;">
+                IT'S NICE TO MEET YOU</h1>
         </div>
         
         
