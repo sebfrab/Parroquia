@@ -9,16 +9,34 @@
 @import url('../fonts/Montserrat-Regular.ttf');
 @import url('../fonts/Montserrat-Bold.ttf');
 
+
+body > .container-fluid {
+  padding: 160px 15px 0;
+}
+
+
 .navbar-default {
-    background-color: transparent !important;
+    background-color: #fff !important;
 }
 
 .top-nav-collapse{
-    background-color: #2385a1 !important;
+    background-color: #f03e47 !important;
+}
+
+.top-nav-collapse  ul > li a{
+    color: #fff !important;
+}
+
+.top-nav-collapse  ul > li a:hover{
+    color: #fff !important;
+}
+
+.top-nav-collapse  ul > li> .hvr-underline-reveal:before{
+    background: #fff !important;
 }
 
 .navbar-default .navbar-nav > li > a{
-    color: #fff !important;
+    /*color: #fff !important;*/
 }
 
 .jumbotron{
@@ -46,4 +64,29 @@
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 400 !important;
     font-size: 14px !important;
+}
+
+
+.contenido_uno{
+    height: 300px;
+    background-color: #666; 
+    padding: 5px;
+}
+
+#menu-auxiliar  li > a{
+    color:#a2a2a2 !important;
+    font-size: 12px;
+}
+
+#menu-auxiliar  li > a:hover{
+    color:#737373 !important;
+}
+
+.menu > li > a:hover{
+    color:#f03e47 !important;
+}
+
+.hvr-underline-reveal:before {
+    background: #f03e47 !important;
+    height: 4px !important;
 }

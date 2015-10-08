@@ -12,14 +12,34 @@
         <link rel="stylesheet" type="text/css" href="./css/init.css" />
         <!-- Menú -->
         <link rel="stylesheet" type="text/css" href="./css/scrolling-nav.css" />
-        
+        <!-- slider -->
+        <link rel="stylesheet" type="text/css" href="./css/jquery.bxslider.css" />
+        <!-- hover -->
+        <link rel="stylesheet" type="text/css" href="./css/hover.css" />
         <!-- Jquery -->
         <script type="text/javascript" src="./js/jquery.js"></script>
     </head>
     <body>
-        <header>
+        
+        <header>         
            <!-- Navigation -->
             <nav id="menu-principal" class="navbar navbar-default navbar-fixed-top" role="navigation">
+                
+                <div id="menu-auxiliar" class="container-fluid hidden-xs">
+                    <div class="row">
+                        <div class="col-lg-12" style="height: 50px; background-color: #eaeaea; margin-bottom: 40px;">
+                            <div class="navbar-collapse bs-js-navbar-collapse collapse"> 
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="http://www.obispadodevalparaiso.cl/">Obispado</a></li>
+                                    <li><a href="http://www.santuariolovasquez.cl/">Santuario Lo Vasquez</a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="container">
                     <div class="navbar-header page-scroll">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -28,24 +48,27 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand page-scroll" href="#page-top"><b style="color:#fff;">Parroquia</b></a>
+                        <a href="" class="navbar-brand">  <p style="margin-top: -25px;"><img style="vertical-align: middle;" src="./images/logo.jpg"/></p></a>
+
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="menu nav navbar-nav navbar-right">
-                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                            <li class="hidden">
-                                <a class="page-scroll" href="#page-top"></a>
+                            <li>
+                                <a class="hvr-underline-reveal" href="#">PARROQUIA</a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="#about">About</a>
+                                <a class="hvr-underline-reveal" href="#">HISTORIA</a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="#services">Services</a>
+                                <a class="hvr-underline-reveal" href="#">COMUNIDADES</a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="#contact">Contact</a>
+                                <a class="hvr-underline-reveal" href="#">GALERIA</a>
+                            </li>
+                            <li>
+                                <a class="hvr-underline-reveal" href="#">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
@@ -55,10 +78,25 @@
             </nav>
         </header>
         
-        <div class="jumbotron">
-            <h1 style="text-align: center; margin-top: 220px;">
-                IT'S NICE TO MEET YOU</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="bxslider">
+                    <li><a href="#"><img src="./images/portada2.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/portada.jpg" /></a></li>
+                </ul>
+            </div>
         </div>
+        
+        
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 contenido_uno"></div>
+                <div class="col-lg-4 contenido_uno"></div>
+                <div class="col-lg-4 contenido_uno"></div>
+            </div>
+        </div>
+        
         
         
         
@@ -115,9 +153,10 @@
         
         <script type="text/javascript" src="./js/bootstrap.js"></script>
         <script type="text/javascript" src="./js/scrolling-nav.js"></script>
+        <script type="text/javascript" src="./js/jquery.bxslider.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-
+                $('.bxslider').bxSlider();
             });
         </script>
     </body>
