@@ -12,8 +12,9 @@
         <link rel="stylesheet" type="text/css" href="./css/init.css" />
         <!-- Menú -->
         <link rel="stylesheet" type="text/css" href="./css/scrolling-nav.css" />
-        <!-- slider -->
-        <link rel="stylesheet" type="text/css" href="./css/jquery.bxslider.css" />
+        <!-- Owl Carousel Assets -->
+        <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="owl-carousel/owl.theme.css" rel="stylesheet">
         <!-- hover -->
         <link rel="stylesheet" type="text/css" href="./css/hover.css" />
         <!-- Jquery -->
@@ -25,16 +26,24 @@
            <!-- Navigation -->
             <nav id="menu-principal" class="navbar navbar-default navbar-fixed-top" role="navigation">
                 
-                <div id="menu-auxiliar" class="container-fluid hidden-xs">
-                    <div class="row">
-                        <div class="col-lg-12" style="height: 50px; background-color: #eaeaea; margin-bottom: 40px;">
-                            <div class="navbar-collapse bs-js-navbar-collapse collapse"> 
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="http://www.obispadodevalparaiso.cl/">Obispado</a></li>
-                                    <li><a href="http://www.santuariolovasquez.cl/">Santuario Lo Vasquez</a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>                                
+                <div id="menu-auxiliar" style=" background-color: #eaeaea; height: 50px; margin-bottom: 40px;" class="container-fluid hidden-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="navbar-collapse bs-js-navbar-collapse collapse"> 
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="http://www.obispadodevalparaiso.cl/">Obispado</a></li>
+                                        <li><a href="http://www.santuariolovasquez.cl/">Santuario Lo Vasquez</a></li>
+                                    </ul>                                
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="navbar-collapse bs-js-navbar-collapse collapse"> 
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#" title="facebook"><img alt="facebook" id="facebook" class="img-responsive" src="images/facebook.png"></a></li>
+                                        <li><a href="#" title="twitter"><img alt="twitter" id="twitter" class="img-responsive" src="images/twitter.png"></a></li>
+                                    </ul>                                
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -48,8 +57,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="" class="navbar-brand">  <p style="margin-top: -25px;"><img style="vertical-align: middle;" src="./images/logo.jpg"/></p></a>
-
+                        <a href="" class="navbar-brand"><p style="margin-top: -14px;"><img class="img-responsive" style="vertical-align: middle;" src="./images/logo2.jpg"/></p></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,18 +80,20 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- /.navbar-collapse -->
                 </div>
-                <!-- /.container -->
             </nav>
         </header>
         
-        <div class="container-fluid">
+        <div class="container-fluid" id="slider">
             <div class="row">
-                <ul class="bxslider">
-                    <li><a href="#"><img src="./images/portada2.jpg" /></a></li>
-                    <li><a href="#"><img src="./images/portada.jpg" /></a></li>
-                </ul>
+                <div class="col-lg-12" style="padding-left:0px; padding-right: 0px;">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div><a><img alt="slider" id="slider1" src="./images/slider-3.jpg" /></a></div>
+                        <div><a><img alt="slider" id="slider1" src="./images/slider-4.jpg" /></a></div>
+                        <div><a><img alt="slider" id="slider1" src="./images/slider-5.jpg" /></a></div>
+                        <div><a><img alt="slider" id="slider1" src="./images/slider-7.jpg" /></a></div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -153,10 +163,40 @@
         
         <script type="text/javascript" src="./js/bootstrap.js"></script>
         <script type="text/javascript" src="./js/scrolling-nav.js"></script>
-        <script type="text/javascript" src="./js/jquery.bxslider.js"></script>
+        <!-- Slider -->
+        <script src="./owl-carousel/owl.carousel.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('.bxslider').bxSlider();
+                
+                $('#owl-demo').owlCarousel({
+                    autoPlay : 3000,
+                    stopOnHover : true,
+                    navigation:false,
+                    paginationSpeed : 1000,
+                    goToFirstSpeed : 2000,
+                    singleItem : true,
+                    autoHeight : true,
+                    transitionStyle:"fade"
+                });
+                
+                
+
+                $("#facebook").mouseover(function() { 
+                    var src = "images/facebook-hover.png";
+                    $(this).attr("src", src);
+                });
+                $("#facebook").mouseout(function() { 
+                    var src = "images/facebook.png";
+                    $(this).attr("src", src);
+                });
+                $("#twitter").mouseover(function() { 
+                    var src = "images/twitter-hover.png";
+                    $(this).attr("src", src);
+                });
+                $("#twitter").mouseout(function() { 
+                    var src = "images/twitter.png";
+                    $(this).attr("src", src);
+                });
             });
         </script>
     </body>

@@ -20,7 +20,7 @@ body > .container-fluid {
 }
 
 .top-nav-collapse{
-    background-color: #f03e47 !important;
+    background-color: #e13139 !important;
 }
 
 .top-nav-collapse  ul > li a{
@@ -59,11 +59,12 @@ body > .container-fluid {
 }
 
 .menu > li > a{
-    color: white;
+    color:#e13139 !important;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 400 !important;
     font-size: 14px !important;
+    font-weight: 600 !important;
 }
 
 
@@ -83,10 +84,10 @@ body > .container-fluid {
 }
 
 .menu > li > a:hover{
-    color:#f03e47 !important;
+    color:#e13139 !important;
 }
 
 .hvr-underline-reveal:before {
-    background: #f03e47 !important;
+    background: #e13139 !important;
     height: 4px !important;
 }
