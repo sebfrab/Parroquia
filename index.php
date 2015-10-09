@@ -8,47 +8,20 @@
         <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
         <!-- Normalización para Web -->
         <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-        <!-- Css Web -->
-        <link rel="stylesheet" type="text/css" href="./css/init.css" />
-        <!-- Menú -->
-        <link rel="stylesheet" type="text/css" href="./css/scrolling-nav.css" />
+        <!-- Hover -->
+        <link rel="stylesheet" type="text/css" href="./css/hover.css" />
         <!-- Owl Carousel Assets -->
         <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
         <link href="owl-carousel/owl.theme.css" rel="stylesheet">
-        <!-- hover -->
-        <link rel="stylesheet" type="text/css" href="./css/hover.css" />
+        <!-- Css Web -->
+        <link rel="stylesheet" type="text/css" href="./css/init.css" />
         <!-- Jquery -->
         <script type="text/javascript" src="./js/jquery.js"></script>
     </head>
     <body>
         
-        <header>         
-           <!-- Navigation -->
+        <header>
             <nav id="menu-principal" class="navbar navbar-default navbar-fixed-top" role="navigation">
-                
-                <div id="menu-auxiliar" style=" background-color: #eaeaea; height: 50px; margin-bottom: 40px;" class="container-fluid hidden-xs">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="navbar-collapse bs-js-navbar-collapse collapse"> 
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="http://www.obispadodevalparaiso.cl/">Obispado</a></li>
-                                        <li><a href="http://www.santuariolovasquez.cl/">Santuario Lo Vasquez</a></li>
-                                    </ul>                                
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="navbar-collapse bs-js-navbar-collapse collapse"> 
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#" title="facebook"><img alt="facebook" id="facebook" class="img-responsive" src="images/facebook.png"></a></li>
-                                        <li><a href="#" title="twitter"><img alt="twitter" id="twitter" class="img-responsive" src="images/twitter.png"></a></li>
-                                    </ul>                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
                 <div class="container">
                     <div class="navbar-header page-scroll">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -57,26 +30,26 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="" class="navbar-brand"><p style="margin-top: -14px;"><img class="img-responsive" style="vertical-align: middle;" src="./images/logo2.jpg"/></p></a>
+                        <a href="" class="navbar-brand" style="margin-top: -15px;"><img src="./images/logo.png"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <ul class="menu nav navbar-nav navbar-right">
                             <li>
-                                <a class="hvr-underline-reveal" href="#">PARROQUIA</a>
+                                <a class="hvr-underline-from-center" href="#">PARROQUIA</a>
                             </li>
                             <li>
-                                <a class="hvr-underline-reveal" href="#">HISTORIA</a>
+                                <a class="hvr-underline-from-center" href="#">HISTORIA</a>
                             </li>
                             <li>
-                                <a class="hvr-underline-reveal" href="#">COMUNIDADES</a>
+                                <a class="hvr-underline-from-center" href="#">COMUNIDADES</a>
                             </li>
                             <li>
-                                <a class="hvr-underline-reveal" href="#">GALERIA</a>
+                                <a class="hvr-underline-from-center" href="#">GALERIA</a>
                             </li>
                             <li>
-                                <a class="hvr-underline-reveal" href="#">CONTACTO</a>
+                                <a class="hvr-underline-from-center" href="#">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
@@ -84,91 +57,76 @@
             </nav>
         </header>
         
+
         <div class="container-fluid" id="slider">
             <div class="row">
                 <div class="col-lg-12" style="padding-left:0px; padding-right: 0px;">
-                    <div id="owl-demo" class="owl-carousel owl-theme">
+                    <div id="owl-demo-slider" class="owl-carousel owl-theme">
                         <div><a><img alt="slider" id="slider1" src="./images/slider-3.jpg" /></a></div>
                         <div><a><img alt="slider" id="slider1" src="./images/slider-4.jpg" /></a></div>
                         <div><a><img alt="slider" id="slider1" src="./images/slider-5.jpg" /></a></div>
-                        <div><a><img alt="slider" id="slider1" src="./images/slider-7.jpg" /></a></div>
                     </div>
                 </div>
             </div>
         </div>
         
-        
-        
-        <div class="container-fluid">
+        <div class="container-fluid" id="noticias">
             <div class="row">
-                <div class="col-lg-4 contenido_uno"></div>
-                <div class="col-lg-4 contenido_uno"></div>
-                <div class="col-lg-4 contenido_uno"></div>
+                <div class="col-lg-12">
+                    <a href="#">
+                        <h3 style="text-align: center;">NOTICIAS</h3>
+                        <p style="text-align: center;">Galerias recientes</p>
+                    </a>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-lg-4" style="background-color: #666; height: 150px;"></div>
+                <div class="col-lg-4" style="background-color: #666; height: 150px;"></div>
+                <div class="col-lg-4" style="background-color: #666; height: 150px;"></div>
             </div>
+                
+                
         </div>
         
+        
+        
+        
+        <div class="container-fluid" id="galeria">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="#">
+                        <h3 style="text-align: center;">GALERIA</h3>
+                        <p style="text-align: center;">Galerias recientes</p>
+                    </a>
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="owl-item"><div class="thumbnail"><a href="#"><img class="galeria-imagen" src="./images/galeria1.jpg" /></a></div></div>
+                        <div class="owl-item"><div class="thumbnail"><a href="#"><img class="galeria-imagen" src="./images/galeria5.jpg" /></a></div></div>
+                        <div class="owl-item"><div class="thumbnail"><a href="#"><img class="galeria-imagen" src="./images/galeria2.jpg" /></a></div></div>
+                        <div class="owl-item"><div class="thumbnail"><a href="#"><img class="galeria-imagen" src="./images/galeria4.jpg" /></a></div></div>
+                        <div class="owl-item"><div class="thumbnail"><a href="#"><img class="galeria-imagen" src="./images/galeria3.jpg" /></a></div></div>
+                    </div> 
+                </div>
+            </div>  
+        </div>
         
         
         
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                </div>
-            </div>
-        </div>
-    </section>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>About Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-        
-        
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         
         
         
         <script type="text/javascript" src="./js/bootstrap.js"></script>
         <script type="text/javascript" src="./js/scrolling-nav.js"></script>
-        <!-- Slider -->
         <script src="./owl-carousel/owl.carousel.min.js"></script>
+        
         <script type="text/javascript">
             $(document).ready(function() {
                 
-                $('#owl-demo').owlCarousel({
+                $('#owl-demo-slider').owlCarousel({
                     autoPlay : 3000,
                     stopOnHover : true,
                     navigation:false,
@@ -179,25 +137,14 @@
                     transitionStyle:"fade"
                 });
                 
-                
-
-                $("#facebook").mouseover(function() { 
-                    var src = "images/facebook-hover.png";
-                    $(this).attr("src", src);
-                });
-                $("#facebook").mouseout(function() { 
-                    var src = "images/facebook.png";
-                    $(this).attr("src", src);
-                });
-                $("#twitter").mouseover(function() { 
-                    var src = "images/twitter-hover.png";
-                    $(this).attr("src", src);
-                });
-                $("#twitter").mouseout(function() { 
-                    var src = "images/twitter.png";
-                    $(this).attr("src", src);
+                $('#owl-demo').owlCarousel({
+                    autoPlay : 7000,
+                    items: 4,
+                    itemsDesktop: [119,3],
+                    itemsDesktopSmall: [979,3]
                 });
             });
+
         </script>
     </body>
 </html>
